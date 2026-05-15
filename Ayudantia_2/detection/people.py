@@ -38,6 +38,7 @@ def run_detection(model, source, cam=False):
 
         cap.release()
         cv2.destroyAllWindows()
+        
 
     else:
         results = model.predict(source, device=device, verbose=False)
